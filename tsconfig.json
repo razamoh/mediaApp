@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": "./src",
+      "paths": {
+        "@config/*": ["config/*"],
+        "@config/": ["config/*"],
+        "@controllers/*": ["controllers/*"],
+        "@models/*": ["models/*"],
+        "@repositories/*": ["repositories/*"],
+        "@services/*": ["services/*"],
+        "@routes/*": ["routes/v1/*"],
+        "@jobs/*": ["jobs/*"],
+        "@monitoring/*": ["monitoring/*"],
+        "@interfaces/*": ["interfaces/*"],
+        "@validators/*": ["validators/*"],
+        "@middlewares/*": ["middlewares/*"]
+      }
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
